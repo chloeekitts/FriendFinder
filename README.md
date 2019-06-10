@@ -7,9 +7,9 @@ The goal was to create a Friend Finder app (essentially a dating app but for fri
 
 ## Technologies used
 - Node.js
-- body-parager NPM Package - https://www.npmjs.com/package/inquirer
-- express NPM Package - https://www.npmjs.com/package/express
-- path NPM Package - https://www.npmjs.com/package/path
+- body-parager NPM Package
+- express NPM Package
+- path NPM Package
 
 ### Prerequisites
 
