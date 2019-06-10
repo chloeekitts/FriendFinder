@@ -4,13 +4,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <!-- materialize -->
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
-    <!-- materialize icons -->
+
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Let browser know website is optimized for mobile-->
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-       <!-- jQuery -->
+
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
@@ -19,7 +19,7 @@
 
 <body>
     <div class='container'>
-        <div class='card-panel yellow darken-1 col s12 center-align'>
+        <div class='card-panel grey darken-1 col s12 center-align'>
             <h4><strong>Survey Questions</strong></h4>
             <div class='card-panel left-align white'>
                 <h5><strong>About You</strong></h5>
@@ -27,9 +27,9 @@
                 <input id="name" type="text" class="validate" required>
                 <label class='active' for="name">Name (required)</label>
                 <input id="photo" type="text" class="validate" required>
-                <label class='active' for="name">Link to Photo Image (required)</label>
+                <label class='active' for="name">Link to Photo Image</label>
                 <h5><strong>Question 1</strong></h5>
-                <p>I see myself as extroverted, enthusiastic.</p>
+                <p>Your mind is always buzzing with unexplored ideas and plans.</p>
                 <select data-placeholder="" class="browser-default" id="q1">
                     <option value="">Choose an option</option>
                     <option value="1">1 (Strongly Disagree)</option>
@@ -39,7 +39,7 @@
                     <option value="5">5 (Strongly Agree)</option>
                 </select>
                 <h5><strong>Question 2</strong></h5>
-                <p>I see myself as critical, quarrelsome.</p>
+                <p>Generally speaking, you rely more on your experience than your imagination.</p>
                 <select data-placeholder="" class="browser-default" id="q2">
                     <option value="">Choose an option</option>
                     <option value="1">1 (Strongly Disagree)</option>
@@ -49,7 +49,7 @@
                     <option value="5">5 (Strongly Agree)</option>
                 </select>
                 <h5><strong>Question 3</strong></h5>
-                <p>I see myself as dependable, self-disciplined.</p>
+                <p>You find it easy to stay relaxed and focused even when there is some pressure.</p>
                 <select data-placeholder="" class="browser-default" id="q3">
                     <option value="">Choose an option</option>
                     <option value="1">1 (Strongly Disagree)</option>
@@ -59,7 +59,7 @@
                     <option value="5">5 (Strongly Agree)</option>
                 </select>
                 <h5><strong>Question 4</strong></h5>
-                <p>I see myself as anxious, easily upset.</p>
+                <p>You rarely do something just out of sheer curiosity.</p>
                 <select data-placeholder="" class="browser-default" id="q4">
                     <option value="">Choose an option</option>
                     <option value="1">1 (Strongly Disagree)</option>
@@ -69,7 +69,7 @@
                     <option value="5">5 (Strongly Agree)</option>
                 </select>
                 <h5><strong>Question 5</strong></h5>
-                <p>I see myself as open to new experiences.</p>
+                <p>People can rarely upset you.</p>
                 <select data-placeholder="" class="browser-default" id="q5">
                     <option value="">Choose an option</option>
                     <option value="1">1 (Strongly Disagree)</option>
@@ -79,7 +79,7 @@
                     <option value="5">5 (Strongly Agree)</option>
                 </select>
                 <h5><strong>Question 6</strong></h5>
-                <p>I see myself as reserved, quiet</p>
+                <p>It is often difficult for you to relate to other people’s feelings.</p>
                 <select data-placeholder="" class="browser-default" id="q6">
                     <option value="">Choose an Option</option>
                     <option value="1">1 (Strongly Disagree)</option>
@@ -89,7 +89,7 @@
                     <option value="5">5 (Strongly Agree)</option>
                 </select>
                 <h5><strong>Question 7</strong></h5>
-                <p>I see myself as sympathetic.</p>
+                <p>In a discussion, truth should be more important than people’s sensitivities.</p>
                 <select data-placeholder="" class="browser-default" id="q7">
                     <option value="">Choose an option</option>
                     <option value="1">1 (Strongly Disagree)</option>
@@ -99,7 +99,7 @@
                     <option value="5">5 (Strongly Agree)</option>
                 </select>
                 <h5><strong>Question 8</strong></h5>
-                <p>I see myself as disorganized.</p>
+                <p>You rarely get carried away by fantasies and ideas.</p>
                 <select data-placeholder="" class="browser-default" id="q8">
                     <option value="">Choose an option</option>
                     <option value="1">1 (Strongly Disagree)</option>
@@ -119,7 +119,7 @@
                     <option value="5">5 (Strongly Agree)</option>
                 </select>
                 <h5><strong>Question 10</strong></h5>
-                <p>I see myself as practical, conventional.</p>
+                <p>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</p>
                 <select data-placeholder="" class="browser-default" id="q10">
                     <option value="">Choose an option</option>
                     <option value="1">1 (Strongly Disagree)</option>
@@ -129,15 +129,14 @@
                     <option value="5">5 (Strongly Agree)</option>
                 </select>
                 <br>
-                <!-- Materialize Modal Trigger/Submit Button -->
+
                 <button type ="submit" data-target="modal1" class="waves-effect waves-light btn modal-trigger cyan lighten-1" id="submitBtn">Submit</button>
             </div>
         </div>
         <div class='col s4'>
-            <p><a href='/api/friends'>API Friends List</a> | <a href='https://github.com/StefanieDing/friend-finder' target='_blank'>GitHub Repo</a></p>
+            <p><a href='/api/friends'>API Friends List</a> | <a href='https://github.com/chloeekitts/FriendFinder' target='_blank'>GitHub Repo</a></p>
         </div>
 
-        <!-- Materialize Modal Structure -->
         <div id="modal1" class="modal">
           <div class="modal-content">
             <h4>Meet Your New BFF</h4>
@@ -151,7 +150,6 @@
 
     </div>
 
-<!-- Grabs information and sends it to server -->
 <script type="text/javascript">
 $(document).ready(function() {
     $("#submitBtn").on("click", function() {
@@ -173,9 +171,7 @@ $(document).ready(function() {
             return isValid;
         }
 
-        //if everything is filled
         if (validateForm() == true) {
-            //creates a new friend from the values submitted
             var newFriend = {
                 name: $('#name').val().trim(),
                 profilePic: $('#photo').val().trim(),
@@ -193,7 +189,6 @@ $(document).ready(function() {
                 ]
             };
 
-            //Grabs current URL of website
             var currentURL = window.location.origin;
 
             //AJAX posts the data to friends API.
@@ -203,10 +198,8 @@ $(document).ready(function() {
                 $("#matchPic").attr("src", data.profilePic);
 
             });
-            // Show the modal with the best match
                 $('.modal').modal();
 
-            //clear form after submission
             $('#name').val("");
             $('#photo').val("");
             $('#q1').val("");
